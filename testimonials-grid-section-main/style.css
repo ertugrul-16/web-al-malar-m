@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body{
+    background:#edf2f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin: 150px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    
+      
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.bg-purple{
+    background-color: #6e3a9f;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: top 0px right 10%;
+    background-repeat: no-repeat;
+
+}
+
+.bg-blue{
+    background-color: #41415b;
+
+}
+
+.bg-gray{
+    background-color: #272729;
+
+}
+
+p,h3{
+    color: #ffffff;
+}
+
+
+.white-theme{
+    color: #272729;
+}
+
+.card-header{
+    display: flex;
+    padding: 5px;
+    align-items: center; /*header kısmındaki resim ve kişi başlıkları ortalanarak güzel bir dikey hizalanma kazanır */
+    justify-content: start;
+}
+
+.card-img{
+    border-radius: 50%;
+    margin-right: 1%;
+}
+
+
+.card:nth-of-type(1){
+    grid-column: 1 / span 2;
+}
+
+.card:nth-of-type(2){
+   
+}
+
+.card:nth-of-type(3){ /*kira*/
+    grid-column: 4 / 5;
+    grid-row: 1 / span 2;
+}
+
+.card:nth-of-type(4){
+   
+}
+
+.card:nth-of-type(5){
+    grid-column: 2 / span 2;
+}
+
+
